@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Danni'o Restaurant</h1>
+    <p id="description">Please fill out this survey to let us know how we did!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required /></label>
+        <label id="number-label">Party Size (Optional): <input type="number" id="number" placeholder="Enter your party size" min="1" max="10"/>
+        </label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required /></label>
+        <label id="subscribe">Subscribe to receive exclusive offers
+          <input type="checkbox" class="inline" value="Yes" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>How did you hear about us?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Local Magazine</option>
+            <option value="2">Search Engine</option>
+            <option value="3">Advertisement (TV/Radio/Online)</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <h1>Which main course item(s) did you try?</h1>
+            <label>Pan Seared Salmon w/ Boubon Sauce
+              <input type="checkbox" id="dish" value="salmon" class="inline" />
+            </label>
+            <label>Roast Beef w/ Roasted Vegtables and Mash
+              <input type="checkbox" id="dish" value="steak" class="inline" />
+            </label>
+            <label>Honey Roasted Duck w/ Roasted Vegetables
+              <input type="checkbox" id="dish" value="duck" class="inline" />
+            </label>
+            <label>Roasted Beef Wellington w/ Potato Puree
+              <input type="checkbox" id="dish" value="salmon" class="inline" />
+            </label>
+            <label>Lobster Risotto
+              <input type="checkbox" id="dish" value="salmon" class="inline" />
+            </label>
+          </label>
+        </fieldset>
+        <fieldset>
+        <label>Upload picture of your meal or experience: <input type="file" name="file" /></label>
+        <label>Additional comments/concerns:
+          <textarea name="additional" rows="3" cols="30" placeholder="Anything else you'd like to let us know?"></textarea>
+        </label>
+        <label>Would you recommend us?
+        <label><input type="radio" name="yes-no" class="inline" value="Yes" />Yes</label>
+        <label><input type="radio" name="yes-no" class="inline" value="No" />No</label>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
